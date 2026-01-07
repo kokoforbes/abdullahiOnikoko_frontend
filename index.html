@@ -8,7 +8,171 @@
 </head>
 
 <body>
+  <!-- Accessibility Bar -->
+  <div class="accessibility-bar">
+    <div>
+      <button type="button" aria-label="Accessibility on our website">
+        Accessibility on our website
+      </button>
+      <button type="button" aria-label="Increase text size">
+        Increase text size
+      </button>
+    </div>
 
+
+    <div>
+      <div class="language-switcher" role="group" aria-label="Language selection">
+        <span class="active">English</span>
+        <span>Cymraeg</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo" aria-label="Social Care Wales Home">
+
+    </a>
+
+    <!-- Added hamburger menu button for mobile navigation -->
+    <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="main-nav">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+      <a href="#">
+        Home
+      </a>
+      <a href="#">
+        Who we are
+      </a>
+      <a href="#">
+        What we do
+      </a>
+      <a href="#">
+        How to register
+      </a>
+      <a href="#">
+        Careers
+      </a>
+      <a href="#">
+        Search
+      </a>
+    </nav>
+
+    <div class="divider"></div>
+
+    <div class="header-actions">
+      <a href="#" class="sign-up-btn">
+        Sign up / Login
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-left">
+      <h1>
+        Welcome to<br>
+        <strong>SCWonline</strong>
+      </h1>
+      <p>
+        SCWonline is where you can apply to register and manage your registrations using a phone, PC or tablet.
+        Employers, known to us as signatories, also use the site.
+      </p>
+      <p>
+        Once you have submitted an application to register or renew your registration, if there is any missing
+        information, we will contact you by email. Please check your emails regularly, including your Junk Spam folders.
+      </p>
+      <ul class="feature-list">
+        <li>
+          Register as a social care worker
+        </li>
+        <li>
+          Apply for signatory
+        </li>
+        <li>
+          Manage your SCW account online
+        </li>
+        <li>
+          Start or further your career in social care
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-right">
+      <div class="form-card">
+        <h2>Sign up to SCWonline</h2>
+        <p>Please create your account</p>
+
+        <form aria-label="Registration form">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <select id="title" name="title" aria-label="Select your title">
+              <option value="">Select your title</option>
+              <option value="mr">Mr</option>
+              <option value="mrs">Mrs</option>
+              <option value="miss">Miss</option>
+              <option value="ms">Ms</option>
+              <option value="dr">Dr</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="forename">Forename(s)</label>
+            <input type="text" id="forename" name="forename" placeholder="Enter your Forename(s)" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your Surname" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile telephone number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of birth</label>
+            <input type="text" id="dob" name="dob" placeholder="DD / MM / YYYY" aria-required="true"
+              aria-describedby="dob-format">
+            <span id="dob-format" class="sr-only">Enter date in day month year format</span>
+          </div>
+
+          <div class="form-group">
+            <label for="language">Preferred language</label>
+            <select id="language" name="language" aria-label="Select your preferred language">
+              <option value="">Select your preferred language</option>
+              <option value="en">English</option>
+              <option value="cy">Cymraeg (Welsh)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="••••••••••" aria-required="true">
+          </div>
+
+          <button type="submit" class="submit-btn">Sign up</button>
+
+          <p class="login-link">
+            Already signed up? <a href="#">Login here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
