@@ -5,26 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SCWonline - Sign up</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Accessibility Bar -->
   <div class="accessibility-bar">
-    <div>
+    <div class="accessibility-left">
       <button type="button" aria-label="Accessibility on our website">
+        <svg width="32" height="13" viewBox="0 0 32 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.229 0V4.52453H9.7031V12.59H17.771V8.06547H22.2969V0H14.229ZM16.9839 11.8031H10.4902V5.31141H14.229V8.06547H16.9839V11.8031ZM21.5098 7.27859H15.0161V0.786875H21.5098V7.27859ZM16.9839 5.31141H15.8032V4.52453H17.771V6.49172H16.9839V5.31141Z"
+            fill="white" />
+        </svg>
+
         Accessibility on our website
       </button>
       <button type="button" aria-label="Increase text size">
+        <svg viewBox="0 0 28 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.4655 3.1475L8.4902 12.59H10.4108L10.9696 10.6936H13.7875L14.3463 12.59H16.3613L13.386 3.1475H11.4655ZM11.3946 8.97038L12.3785 5.57894L13.3624 8.97038H11.3946ZM19.5098 2.36063H17.9356V3.93438H17.1484V2.36063H15.5742V1.57375H17.1484V0H17.9356V1.57375H19.5098V2.36063Z"
+            fill="white" />
+        </svg>
+
         Increase text size
       </button>
     </div>
 
 
-    <div>
-      <div class="language-switcher" role="group" aria-label="Language selection">
-        <span class="active">English</span>
-        <span>Cymraeg</span>
-      </div>
+    <div class="language-switcher" role="group" aria-label="Language selection">
+      <button type="button" aria-label="Select english language" class="active">
+        English
+      </button>
+      <button type="button" aria-label="Select Cymraeg language">
+        Cymraeg
+      </button>
     </div>
   </div>
 
@@ -72,6 +87,7 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="main-content">
     <div class="content-left">
       <h1>
