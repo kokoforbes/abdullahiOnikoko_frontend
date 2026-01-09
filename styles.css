@@ -124,9 +124,9 @@ body {
 .hamburger-line {
   width: 28px;
   height: 3px;
-  background-color: white;
-  transition: all 0.3s ease;
+  background-color: #fff;
   border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 .hamburger:hover .hamburger-line {
@@ -139,7 +139,7 @@ body {
 }
 
 .hamburger[aria-expanded="true"] .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(8px, 8px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hamburger[aria-expanded="true"] .hamburger-line:nth-child(2) {
@@ -147,7 +147,7 @@ body {
 }
 
 .hamburger[aria-expanded="true"] .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Mobile navigation starts as full-screen overlay */
