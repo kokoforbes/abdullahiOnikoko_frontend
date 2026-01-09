@@ -485,7 +485,7 @@ main {
   .main-content {
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
-    padding: 3rem 2rem 9rem 2rem;
+    padding: 3rem 2rem 16rem 2rem;
   }
 
   .feature-list li {
@@ -548,6 +548,8 @@ main {
   .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    padding: 4rem 6rem 24rem 6rem;
   }
 
   .content-left h1 {
