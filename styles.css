@@ -27,12 +27,18 @@ body {
   background-color: #37394b;
   color: white;
   padding: 0.5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   font-style: normal;
   font-size: 0.918rem;
   line-height: 1.477rem;
+}
+
+.accessibility-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .accessibility-bar button {
@@ -83,15 +89,20 @@ body {
 }
 
 /* Mobile-first header layout */
-.header {
+header {
   background-color: #007b67;
   padding: 1rem;
+}
+
+.header-contain {
+  max-width: 87.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   position: relative;
+  margin: 0 auto;
 }
 
 .logo {
@@ -237,7 +248,7 @@ main {
 .main-content {
   max-width: 87.5rem;
   margin: 0 auto;
-  padding: 3.75rem 1.25rem;
+  padding: 2rem 1.25rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 3.75rem;
@@ -266,7 +277,6 @@ main {
 }
 
 .content-left {
-  padding: 2rem 1.5rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -277,9 +287,14 @@ main {
 
 .content-left h1 {
   font-size: 2rem;
-  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  font-family: "Gibson", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3.375rem;
+  line-height: 4.063rem;
+  color: #ffffff;
 }
 
 .content-left h1 strong {
@@ -308,6 +323,8 @@ main {
   align-items: center;
   gap: 1rem;
   font-size: 0.95rem;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .feature-list li svg {
@@ -324,6 +341,7 @@ main {
     0 0.125rem 0.25rem rgba(26, 26, 26, 0.08);
   border-radius: 0.75rem;
   width: 100%;
+  z-index: 1;
 }
 
 .form-card h2 {
@@ -336,10 +354,11 @@ main {
 }
 
 .form-card > p {
-  color: #1a1a1a;
-  opacity: 0.698;
+  color: #1a1a1ab2;
   margin-bottom: 2rem;
   font-size: 0.95rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .form-group {
@@ -444,15 +463,14 @@ main {
 /* Tablet styles - enhancing from mobile base */
 @media (min-width: 768px) {
   .accessibility-bar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 0.5rem 2rem;
     font-size: 0.918rem;
   }
 
-  .accessibility-bar button {
-    font-size: 0.875rem;
+  .accessibility-contain {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .header {
@@ -466,22 +484,13 @@ main {
 
   .main-content {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .content-left {
-    padding: 3rem 2rem;
-  }
-
-  .content-left h1 {
-    font-size: 2.5rem;
-  }
-
-  .content-left p {
-    font-size: 1rem;
+    align-items: flex-start;
+    padding: 3rem 2rem 9rem 2rem;
   }
 
   .feature-list li {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .feature-list li svg {
@@ -489,12 +498,9 @@ main {
     height: 30px;
   }
 
-  .form-card {
-    padding: 2.5rem;
-  }
-
-  .form-card h2 {
-    font-size: 1.75rem;
+  .form-card > p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -544,24 +550,14 @@ main {
     grid-template-columns: 1fr 1fr;
   }
 
-  .content-left {
-    padding: 4rem 3rem 4rem 4rem;
-  }
-
   .content-left h1 {
-    font-size: 3rem;
     margin-bottom: 2rem;
   }
 
   .content-left p {
     margin-bottom: 2rem;
-    height: 15rem;
     font-size: 1.25rem;
     line-height: 1.5rem;
-  }
-
-  .feature-list li {
-    font-size: 1.05rem;
   }
 
   .form-card {
