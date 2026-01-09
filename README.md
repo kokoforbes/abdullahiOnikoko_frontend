@@ -74,7 +74,7 @@ Close attention to the original design:
 
 ## File Structure
 
-```
+```bash
 .
 ├── index.html          # Main HTML structure
 ├── styles.css          # All styles (mobile-first)
